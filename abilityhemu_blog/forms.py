@@ -5,6 +5,6 @@ from.models import Post
 class Postform(forms.ModelForm):
     class Meta:
         model = Post
-        fields =('title','text',)
+        fields =('title','text')
 
 

@@ -51,8 +51,10 @@
 </p>
 
 <div class="page_header">
+    {% if user.is_authenticated %}
 <a href="{% url 'post_new' %}" class="top-menu" ><span class="glypicon-plus"></span></a>
-<h1><a href="www.tecabilityblogsport">techabilityblogsport.io </a></h1>
+    {% endif %}
+<h1><a href=" ">techabilityblogsport.io </a></h1>
 </div>
 <div class="content container">
 <div class="row">

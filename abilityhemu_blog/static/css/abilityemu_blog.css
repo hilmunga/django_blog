@@ -1,16 +1,11 @@
 body{
     padding-left: 200px;
 }
-.parent{
-    width:400px;}
-.labels, #controls{
-    float:left;
-    width:198px;
-    border:1px solid rgba(0,0,0,1);}
+
 .parent p {
     clear:both;}
 h1 a {
-    font-family: 'Lobster';
+    font-family: 'Lobster',cursive;
     color: #FCA205;
      }
 .page-header {

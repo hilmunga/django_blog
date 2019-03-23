@@ -1,74 +1,13 @@
-{% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link>
-</head>
-<body>
-
-<a href="https://www.google.com"/>Gooogle</a>
-<script>
-    const beautifier=function(){
-      var me =document.querySelector("a");
-      me.addEventListener("click", function(event) {
-         alert("redirecting stopped");
-         console.log(event);
-         event.preventDefault();
-
-})};
-     beautifier();
-     const stoppropagation=function(){
-        var button= document.querySelector("button12");
-        button.addEventListener("mousedown", function(event){
-            alert("button clicked")
-            if(event.button!==2)
-                event.stopPropagation();
-
-        })};
-     stoppropagation();
-     const demonstrate=function(){
-
-       var rocket =document.getElementById("demo");
-         rocket.addEventListener("mousedown",function(event){
-           alert("paragraph clicked");
-           console.log(event)
-
-     })};
-     demonstrate()
-    //Removing an event listner from an element
-   remove=document.getElementbyId("id_name");
-     remove.removeEventListener("click", fn_name);
-
-
-
-    </script>
-<p id ="demo">Hello Ho
-    <button id="button12">Button2</button>
-</p>
-
-<div>
-<h1><a href="/">techabilityblogsport.io </a></h1>
-</div>
-<div class="content container">
-<div class="row">
-<div class="col-md-8">
-
+{% extends "abilityhemu_blog/base.html" %}
+{% block content %}
     {% for post in posts %}
         <div class='post'>
         <div class="date">
         <p>Published:{{ post.published_date }}</p>
         </div>
-            <h1><a href=" ">{{ post.title }}</a></h1>
+            <h1><a href="{% url 'post_detail' pk=post.pk %} ">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
         </div>
 
     {% endfor %}
-</div>
-</div>
-</div>
-</body>
-</html>
+{% endblock %}

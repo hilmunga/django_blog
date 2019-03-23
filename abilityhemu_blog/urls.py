@@ -6,4 +6,5 @@ urlpatterns =[
     url(r'^$', views.post_list, name ='post_list'),
     url(r'^menu$',views.menu_show, name="menu_show"),
     url(r'^lipalater$', views.lipalater, name='lipalater'),
+    url(r'^post/(?P<pk>\d+)/$',views.post_detail, name='post_detail'),
 ]

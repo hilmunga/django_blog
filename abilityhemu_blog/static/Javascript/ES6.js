@@ -1,4 +1,4 @@
-/*const purple = function beautifier(){
+/**const purple = function beautifier(){
 
 
 }
@@ -9,8 +9,8 @@ for (i=0; i<headerClass.length;)
 headerClass[i].style.border='1px solid orange'
 const id=getElementsById();
 const selector_single=querySelector();
-const selector_all=querySelectorAll();*/
-<a href="https://google.com"/>Gooogle</a>
+const selector_all=querySelectorAll();
+<a href="https://google.com"/>Gooogle</a>;
 var me =document.querySelector(".header");
 me.addEventListener("click", function(event){
     alert("redirecting stopped");
@@ -18,6 +18,7 @@ me.addEventListener("click", function(event){
     event.preventDefault();
 
 });
+export default body;**/
 
 
 

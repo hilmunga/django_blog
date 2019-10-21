@@ -6,7 +6,7 @@ cffi==1.11.5
 chardet==3.0.4
 cryptography==2.2.2
 dj-database-url==0.5.0
-Django==1.11.11
+Django==1.11.23
 django-appconf==1.0.2
 django-comments-xtd==2.1.0
 django-contrib-comments==1.8.0

@@ -36,7 +36,7 @@ PyJWT==1.6.4
 pyOpenSSL==18.0.0
 PyPDF2==1.26.0
 pytz==2018.3
-reportlab==3.4.0
+reportlab==3.5.55
 requests==2.19.1
 six==1.11.0
 twilio==6.14.7
